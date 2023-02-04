@@ -11,7 +11,11 @@ export default function Calculator() {
 
   // function to concatinate entered value in input box with result
   function handleClick(e) {
-    setResult(result.concat(e.target.value));
+    if (result.length === 1 && result === "0") {
+      setResult(e.target.value);
+    } else {
+      setResult(result.concat(e.target.value));
+    }
   }
 
   // function to clear all inputs from screen
@@ -37,7 +41,7 @@ export default function Calculator() {
     <div id="calculator">
       <input
         type="text"
-        placeholder=""
+        placeholder="0"
         className="input-box"
         value={result}
       ></input>
