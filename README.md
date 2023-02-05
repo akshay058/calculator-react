@@ -24,6 +24,12 @@ Install my-project with npm
 
 ## Deployment
 
+This project is deployed on :
+
+Live view:
+https://ak-react-calculator.netlify.app/
+
+
 To deploy this project run
 
 ```bash
@@ -51,7 +57,7 @@ CSS, JavaScript , React (useState Hook concept)
 ## Structure
 
 |-- calculator
-   - |-- calculator.jpg
+    |-- calculator.jpg
     |-- calculator1.jpg
     |-- directoryList.md
     |-- package-lock.json
